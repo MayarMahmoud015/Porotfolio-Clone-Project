@@ -1,0 +1,473 @@
+:root {
+  --main-color: rgb(255, 48, 91);
+  --source-sans: "Source Sans 3", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+/* start the navbar style */
+.navbar-brand {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(255, 48, 91);
+    line-height: 25px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    transition: all 0.5s;
+} 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:rgb(255, 48, 91)
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:rgb(255, 48, 91)
+}
+/* end the navbar style */
+
+
+/* start the header style */
+
+#header{
+    background: linear-gradient(rgba(0, 0, 0, 0.637) 0% 100%), url('https://images.unsplash.com/photo-1506426305266-2b7e740fd828?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1wdHklMjBzdHJlZXR8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+#header .header-text{
+    margin-top: 300px;
+    margin-left: 120px;
+}
+
+#header .header-text h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26.4px;
+    color: white;
+}
+#header .header-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 77px;
+    color: rgb(255, 48, 91);
+    /* text-decoration: none solid rgb(255, 48, 91); */
+}
+#header .header-text h4{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31.2px;
+    color: white;
+}
+
+/* end the header style */
+
+/* start the about style */
+#about .about{
+    margin-top: 800px;
+    margin-bottom: 100px;
+}
+#about .about .row .image {
+  border:  10px solid black;
+  }
+
+
+  #about .about .row .image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 2%;
+position: relative;
+top: 20px;
+left: 20px ;
+  }
+
+
+#about .about .row .image .overlay{
+    position: absolute;
+    top:110%;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    transition: all 0.5s ease-out;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#about .about .row .image .overlay a{
+    margin-left: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+
+#about .about .image:hover .overlay{
+
+    top: 20px;
+    
+  }
+  #about .about .about-text{
+    margin-top: 80px;
+  }
+  #about .about .about-text h2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  #about .about .about-text .unselect{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(239, 121, 94);
+    user-select: none;
+  }
+
+  #about .about .about-text .profile{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  #about .about .about-text .buttons .b1{
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+  }
+  #about .about .about-text .buttons .b2{
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+  }
+
+  #about .about .about-text .buttons .b1:hover{
+    background-color: rgb(208, 40, 74);
+  }
+  #about .about .about-text .buttons .b2:hover{
+    background-color: rgb(208, 40, 74);
+  }
+
+/* end the about style */
+
+
+/* start the services style */
+#services{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+#services .services{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#services .services .st-row h2{
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: rgb(51, 51, 51);
+}
+
+#services .services .nd-row i{
+  font-size: 36px;
+  color: rgb(255, 48, 91);
+  transition: all 0.5s;
+}
+#services .services .nd-row h3{
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height:26.4px;
+  color: rgb(51, 51, 51);
+}
+#services .services .nd-row p{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height:25px;
+  color: rgb(85, 85, 85);
+}
+#services .services .nd-row .col{
+  transition: all 0.5s; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#services .services .nd-row .col:hover{
+  background-color: white; 
+}
+#services .services .nd-row .col:hover i{
+  transform: scale(1.2);
+}
+/* end the services style */
+
+
+/* start the portofolio style */
+
+.image-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.41);
+}
+
+.custom-line1 {
+  display: block; /* Ensures the span behaves like a block element */
+  border-bottom:2px solid rgb(255, 48, 91); /* Adjust the thickness and color */
+  width: 20%; /* Set the desired width */
+  margin-left: 620px;
+}
+.custom-line2 {
+  display: block; /* Ensures the span behaves like a block element */
+  border-bottom:2px solid rgb(255, 48, 91); /* Adjust the thickness and color */
+  width: 45%; /* Set the desired width */
+  margin-left: 580px;
+}
+.custom-line3 {
+  display: block; /* Ensures the span behaves like a block element */
+  border-bottom:2px solid rgb(255, 48, 91); /* Adjust the thickness and color */
+  width: 20%; /* Set the desired width */
+  margin-left: 620px;
+}
+
+
+#portofolio .row-po2{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+#portofolio .row-po2 .carousel-inner .row{
+  margin-bottom: 30px;
+}
+
+
+#portofolio .row-po2 .carousel-words {
+  margin-bottom: 50px;
+}
+
+#portofolio .row-po2 .carousel-words .btn{
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: black;
+}
+
+#portofolio .row-po2 .carousel-item .row .col img{
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#portofolio .row-po2 .carousel-item .row .col{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+#portofolio .row-po2 .carousel-item .row .col:hover{
+  background-color: rgba(0, 0, 0, 0.57);
+}
+
+/* end the portofolio style */
+
+
+
+
+
+.img-cont{
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../work-7.jpg'); */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.548);
+  transition: all 1s;
+
+}
+.img-cont:hover .layer{
+  top: 0;
+}
+
+
+
+/* start the numbers style */
+#numbers .numbers .row{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#numbers .numbers .row .col  i{
+  color: var(--main-color);
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+#numbers .numbers  .row .col h3{
+  font-family: var(--source-sans);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 28.6px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 10px;
+}
+
+#numbers .numbers .row .col h5{
+  font-family: var(--source-sans);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.6px;
+  color: rgb(85, 85, 85);
+}
+
+/* end the numbers style */
+
+
+/* start the feedback style */
+#feedback .feedback .feedback-buttons button{
+  background-color: var(--main-color);
+  /* margin-top: 100px; */
+}
+
+#feedback .feedback .feedback-slides{
+  margin: 50px 250px 50px 250px;
+  height: 100%;
+}
+#feedback .feedback .feedback-slides .carousel-inner .feedback-slide{
+  padding: 40px 10px 40px 10px;
+  background: linear-gradient(135deg, rgb(255, 48, 91) 0% 15%, rgb(241, 241, 241) 15% 100%);
+}
+#feedback .feedback .feedback-slides .carousel-inner .feedback-slide h3{
+  font-family: var(--source-sans);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 28.6px;
+  color: rgb(51, 51, 51);
+}
+#feedback .feedback .feedback-slides .carousel-inner .feedback-slide a{
+  font-family: var(--source-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16.5px;
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+}
+#feedback .feedback .feedback-slides .carousel-inner .feedback-slide p{
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+}
+/* end the feedback style */
+
+/* start the Blog style */
+#Blog .Blog .row .col-md-4 .card a{
+  font-family: var(--source-sans);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: black;
+  text-decoration: none;
+}
+#Blog .Blog .row .col-md-4 .card .readmore-a{
+  font-family: var(--source-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: black;
+  text-decoration: none;
+}
+#Blog .Blog .row .col-md-4 .card .card-text{
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+/* end the Blog style */
+
+
+/* start the contact style */
+#contact .contact .row .col-md-5 .meduim-input1{
+  margin-left: 200px;
+  width: 80%;
+  height: 40px;
+}
+#contact .contact .row .col-md-5 .meduim-input2{
+  margin-left: 120px;
+  margin-right: 50px;
+  width: 80%;
+  height: 40px;
+}
+#contact .contact .row .col-md-10 .large-input1{
+  width: 83%;
+  height: 40px;
+  margin-left: 200px;
+}
+#contact .contact .row .col-md-10 .large-input2{
+  width: 85%;
+  height: 100px;
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+
+#contact .contact .row .bc{
+  background-color: var(--main-color);
+  margin-left: 200px;
+  color: white;
+  font-family: var(--roboto);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+#contact .contact .row .bc:hover{
+  background-color: rgb(208, 40, 74);
+}
+/* end the contact style */
+
+
+
+
+
